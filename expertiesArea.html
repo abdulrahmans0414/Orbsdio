@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Areas of Expertise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    .about-container {
+      height: 70vh;
+      text-align: center;
+      background-color: #dadde2;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-container h1 {
+      font-size: 2.5rem;
+      color: #2a2a8a;
+      margin-bottom: 10px;
+    }
+
+    .about-container h2 {
+      font-size: 1.2rem;
+      color: #2a2a8a;
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-container button {
+      background-color: #2a2a8a;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .about-container button:hover {
+      background-color: #1d1d62;
+    }
+
+    .purpose-container {
+      text-align: center;
+      background-color: #dadde2;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .purpose-container h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .purpose-container h2 {
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .content img {
+      max-width: 400px;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+    }
+
+    .content .quote {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .content div p {
+      text-align: start;
+      margin-bottom: 10px;
+    }
+
+    .content div strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #222;
+    }
+
+    @media (max-width: 799px) {
+      .about-container h1 {
+        font-size: 1.5rem;
+        color: #2a2a8a;
+        margin-bottom: 10px;
+      }
+
+      .about-container h2 {
+        font-size: 1rem;
+        color: #2a2a8a;
+        margin-bottom: 20px;
+      }
+
+      .about-container p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .about-container button {
+        background-color: #2a2a8a;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    }
+  </style>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-text">Orbsdio</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="expertiesArea.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="about-container">
+      <h1>About <span style="color: #2a2a8a">orbsdio</span></h1>
+      <h2>Your Partner in Software Innovation</h2>
+      <p>
+        Orbsdio, founded in 2018, is a leading software development company
+        <br />
+        specializing in bespoke software solutions, mobile app development, and
+        <br />
+
+        cloud services. Our mission is to enhance operational efficiency and
+        <br />
+        drive growth for businesses across diverse industries.
+      </p>
+      <p>
+        With a proven track record of delivering tailored solutions, Orbsdio has
+        <br />
+        successfully transformed ideas into reality for numerous clients. Our
+        <br />
+        commitment to quality and reliability has consistently resulted in
+        <br />
+        measurable improvements in operational performance and business growth.
+      </p>
+      <button>Learn More</button>
+    </div>
+
+    <hr />
+    <!-- purpose section -->
+    <div class="purpose-container">
+      <h1>Our Purpose</h1>
+      <h2>
+        To bring together the best of technology and <br />
+        our people to supercharge progress.
+      </h2>
+      <div class="content">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D4D22AQFaRt1LkOcdsQ/feedshare-shrink_800/feedshare-shrink_800/0/1701019498852?e=1739404800&v=beta&t=ccwcV_-fep_BB_E8rsMXgXzgFhAXL18GUd8IAS1bZM8"
+          alt="Hackathon Event"
+        />
+        <div class="quote">
+          <p>
+            We look forward to supercharging our growth with optimism and <br />
+            confidence, ready to seize the many opportunities ahead. Our growth
+            <br />
+            strategy for the emerging digital and AI future is built on five
+            <br />
+            strategic objectives.
+          </p>
+          <strong>Abdul Rahman</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Orbsdio</h3>
+          <p>
+            Transform Your Vision into Reality with Orbsdio. Reach out to us and
+            explore how we can collaborate to achieve your business goals.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Company</a></li>
+            <li><a href="#support">Client Support</a></li>
+            <li><a href="#services">Company Services</a></li>
+            <li><a href="#news">Latest News</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Customer</h4>
+          <ul>
+            <li><a href="#jobs">Job Opportunities</a></li>
+            <li><a href="#story">Company Story</a></li>
+            <li><a href="#creative">Creative People</a></li>
+            <li><a href="#pricing">Pricing Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Latest Blog</h4>
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#legal">Legal Notice</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright 2025 - Orbsdio</p>
+      </div>
+    </footer>
+  </body>
+</html>
