@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #23272c;
-  padding: 20px 40px;
+  padding: 15px 40px;
   color: white;
   position: relative;
 }
@@ -113,17 +113,27 @@ hr {
   text-align: center;
   padding: 50px;
   margin-bottom: 50px;
+  /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
 }
 
 .area-container h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2.5em;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #222;
+  animation: fadeInDown 1s ease-in-out;
 }
 
+.area-container p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Card Styles */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 0 20px;
 }
@@ -131,38 +141,90 @@ hr {
 .card {
   background: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
 }
 
 .icon {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 15px;
+  color: #007bff;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-.area-container h2 {
+.card h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .card p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  /* font-size: 0.95em; */
+  color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-a {
+.card a {
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-a:hover {
+.card a:hover {
+  color: #0056b3;
   text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* tagline style */
@@ -339,17 +401,21 @@ a:hover {
     font-size: 14px;
   }
   /* area of expertise */
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+
+  .area-container {
+    padding: 30px;
   }
 
   .area-container h1 {
     font-size: 2em;
   }
 
-  .area-container {
-    padding: 40px;
+  .card {
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 2.5em;
   }
 
   /* tagline */
@@ -415,27 +481,18 @@ a:hover {
     padding: 10px 40px;
     font-size: 12px;
   }
-  /* area of expertise */
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
 
+  /* area of expertise */
   .area-container h1 {
     font-size: 1.8em;
   }
 
   .card {
-    padding: 15px;
+    padding: 10px;
   }
 
   .icon {
     font-size: 2em;
-  }
-
-  .area-container {
-    padding: 40px;
-    margin-bottom: 40px;
   }
 
   /* tagline */

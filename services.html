@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
   </head>
   <style>
-    .service-container {
+    /* .service-container {
       padding: 0px 50px;
       margin-bottom: 60px;
     }
@@ -23,7 +23,7 @@
       margin-bottom: 10px;
     }
     header h4 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
       font-size: 1.5em;
       margin-bottom: 10px;
     }
@@ -76,6 +76,167 @@
 
     .service a:hover {
       text-decoration: underline;
+    } */
+
+    .service-container {
+      padding: 20px 50px;
+      margin-bottom: 60px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #333;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h4 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #555;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    header p {
+      color: #444;
+      font-size: 1.2em;
+      line-height: 1.5;
+      animation: fadeInDown 1.4s ease-in-out;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: #f0f0f0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      text-align: left;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .service img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover img {
+      transform: scale(1.05);
+    }
+
+    .service h2 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.5em;
+      margin: 15px;
+      color: #333;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .service p {
+      font-size: 1em;
+      color: #555;
+      margin: 15px;
+      line-height: 1.6;
+      animation: fadeIn 1.4s ease-in-out;
+    }
+
+    .service a {
+      display: block;
+      margin: 15px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      animation: fadeIn 1.6s ease-in-out;
+    }
+
+    .service a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Media Queries for Smaller Screens */
+    @media (max-width: 768px) {
+      .service-container {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      header h4 {
+        font-size: 1.3em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .services {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header h4 {
+        font-size: 1.2em;
+      }
+
+      header p {
+        font-size: 0.9em;
+      }
+
+      .service h2 {
+        font-size: 1.2em;
+      }
+
+      .service p {
+        font-size: 0.9em;
+      }
     }
   </style>
   <body>
@@ -110,7 +271,7 @@
       <div class="services">
         <div class="service">
           <img
-            src="https://a-us.storyblok.com/f/1010806/2560x1440/757198d58f/2286308_reworkbuildingproductspeopleloveinfo1_2560x1440_060524.png/m/"
+            src="https://miro.medium.com/v2/resize:fit:1400/1*h1sTsd2rw2auspNulRYd5w.png"
             alt="Customer Discovery"
           />
           <h2>Understanding Customer Discovery and Product Market Fit</h2>
