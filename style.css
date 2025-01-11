@@ -112,6 +112,7 @@ hr {
 .area-container {
   text-align: center;
   padding: 50px;
+  margin-bottom: 50px;
 }
 
 .area-container h1 {
@@ -313,14 +314,24 @@ a:hover {
   }
   .hero {
     padding: 0 30px;
-    height: 40vh;
+    /* height: 40vh; */
+    display: flex;
+    align-items: center;
   }
 
   .hero h1 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 500;
     color: #393535;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 20px;
+    margin-right: 50px;
+    text-align: center;
   }
 
   .get-start {
@@ -338,7 +349,7 @@ a:hover {
   }
 
   .area-container {
-    padding: 30px;
+    padding: 40px;
   }
 
   /* tagline */
@@ -367,6 +378,7 @@ a:hover {
 
   .footer-section {
     margin-bottom: 20px;
+    margin-right: 60px;
   }
 }
 
@@ -380,21 +392,23 @@ a:hover {
     font-size: 0.9rem;
   }
   .hero {
-    height: 50vh;
+    /* height: 40vh; */
     padding: 0 20px;
-    /* align-items: center; */
-    /* text-align: center; */
+    align-items: center;
+    text-align: center;
   }
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .hero h2 {
     font-size: 20px;
   }
 
   .hero p {
+    align-items: center;
     font-size: 14px;
+    margin: 30px;
   }
 
   .get-start {
@@ -420,7 +434,8 @@ a:hover {
   }
 
   .area-container {
-    padding: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
   }
 
   /* tagline */
@@ -451,5 +466,10 @@ a:hover {
   .btn {
     font-size: 12px;
     padding: 6px 12px;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin-right: 60px;
   }
 }

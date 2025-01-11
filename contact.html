@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <style>
@@ -111,6 +112,28 @@
 
     button:hover {
       background-color: #000000;
+    }
+
+    @media (max-width: 799px) {
+      .contact-us {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info,
+      .image {
+        width: 100%;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+
+    @media (max-width: 477px) {
+      .contact-container {
+        padding: 10px;
+      }
     }
   </style>
   <body>
