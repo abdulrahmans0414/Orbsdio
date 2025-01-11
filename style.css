@@ -314,7 +314,7 @@ a:hover {
   }
   .hero {
     padding: 0 30px;
-    /* height: 40vh; */
+    height: 80vh;
     display: flex;
     align-items: center;
   }
@@ -392,7 +392,7 @@ a:hover {
     font-size: 0.9rem;
   }
   .hero {
-    /* height: 40vh; */
+    height: 40vh;
     padding: 0 20px;
     align-items: center;
     text-align: center;
